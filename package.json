@@ -1,0 +1,51 @@
+{
+  "name": "toast-stack",
+  "version": "1.0.0",
+  "description": "A minimal dark toast component for React. Clean dark card, stacking, progress ring, hover-to-expand, and auto-dismiss. No dependencies.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly --outDir dist"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4",
+    "react": "^18",
+    "react-dom": "^18",
+    "typescript": "^5",
+    "vite": "^5",
+    "vite-plugin-dts": "^3"
+  },
+  "keywords": [
+    "react",
+    "toast",
+    "notification",
+    "dark",
+    "minimal"
+  ],
+  "author": "Ezekiel Adewumi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaezekiel/toast-stack"
+  },
+  "homepage": "https://aaezekiel.co/notes/toast-stack"
+}
